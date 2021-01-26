@@ -343,11 +343,61 @@ fn main(){
 <p><a href="https://blog.rust-lang.org/2020/12/31/Rust-1.49.0.html">https://blog.rust-lang.org/2020/12/31/Rust-1.49.0.html</a></p>
 <h3><a class="header" href="#rust-将不再支持-windows-xp" id="rust-将不再支持-windows-xp">Rust 将不再支持 Windows XP</a></h3>
 <p><a href="https://github.com/rust-lang/compiler-team/issues/378">https://github.com/rust-lang/compiler-team/issues/378</a></p>
-<h1><a class="header" href="#本月简报社区热点" id="本月简报社区热点">本月简报：社区热点</a></h1>
+<h1><a class="header" href="#本月简报--社区热点" id="本月简报--社区热点">本月简报 | 社区热点</a></h1>
 <ul>
 <li>来源：<a href="https://rustcc.cn/section?id=f4703117-7e6b-4caf-aa22-a3ad3db6898f">Rust日报</a></li>
 <li>作者：Rust 日报小组</li>
 </ul>
+<h2><a class="header" href="#deno-in-2020" id="deno-in-2020">Deno in 2020</a></h2>
+<p>一直很火热的 Deno 官方最近发布了 Deno 的<a href="https://deno.land/posts/deno-in-2020">大事记表</a>。
+其中 1 月份进行了将 libdeno 替换成 rusty_v8 的工作。之前是使用 libdeno（C++ 写的） 来进行绑定 V8 的操作。现在替换成 Rust 原生实现的 rusty_v8。并且 rusty_v8 是一个单独的 Rust crate。</p>
+<h2><a class="header" href="#the-rust-on-raspberry-pi-pico-charity-live-stream" id="the-rust-on-raspberry-pi-pico-charity-live-stream">The Rust on Raspberry Pi Pico Charity Live Stream</a></h2>
+<p>在树莓派上写 Rust 是一种怎样的体验？最近一位国外友人就尝试这么做了，并且进行了直播。具体详情可以<a href="https://www.reddit.com/r/rust/comments/l39jdo/the_rust_on_raspberry_pi_pico_charity_live_stream/">戳此链接</a>。
+Rust 在嵌入式开发领域还是有非常大的潜力的。</p>
+<p>想要看更多关于 Rust 的流媒体视频，可以关注这个项目 <a href="https://github.com/jamesmunns/awesome-rust-streaming">awesome-rust-streaming</a></p>
+<h2><a class="header" href="#sequoia-pgp-发布-10-版本" id="sequoia-pgp-发布-10-版本">Sequoia PGP 发布 1.0 版本</a></h2>
+<p>2018 年，三位 GnuPG 开发者开始着手开发 Sequoia，这是 OpenPGP 在 Rust 中的实现版本。OpenPGP 是一种非专有协议，为加密消息、签名、私钥和用于交换公钥的证书定义了统一标准。</p>
+<p>通过<a href="https://sequoia-pgp.org/blog/2020/12/16/202012-1.0/">官方博客</a>可以看出团队对当前版本对于安全性的思考和对未来下一步的规划。</p>
+<h2><a class="header" href="#rustup-宣布发布-1230-版本" id="rustup-宣布发布-1230-版本">Rustup 宣布发布 1.23.0 版本</a></h2>
+<p>官方发布 1.23.0 版本，其中最激动人心的改变就是支持 Apple M1 设备。大家可以安心的买 M1 了！</p>
+<p><a href="https://blog.rust-lang.org/2020/11/27/Rustup-1.23.0.html">原文链接</a></p>
+<h2><a class="header" href="#firecracker" id="firecracker">Firecracker</a></h2>
+<p>Firecracker 是一种开源虚拟化技术，专门用于创建和管理安全的，多租户容器和基于功能的服务。</p>
+<p><a href="https://github.com/firecracker-microvm/firecracker">项目地址</a></p>
+<h2><a class="header" href="#rust-gui-编程介绍" id="rust-gui-编程介绍">Rust GUI 编程介绍</a></h2>
+<p>Rust GUI 方面的介绍以及目前 Rust GUI 库的现阶段状况</p>
+<p><a href="https://dev.to/davidedelpapa/rust-gui-introduction-a-k-a-the-state-of-rust-gui-libraries-as-of-january-2021-40gl#comments">原文链接</a></p>
+<h2><a class="header" href="#facebook-使用-rust-的简单介绍" id="facebook-使用-rust-的简单介绍">Facebook 使用 Rust 的简单介绍</a></h2>
+<p>该 twitter 快速的介绍了 Rust 在 facebook 中的使用历程:</p>
+<p>2017 年开始应用于一个资源控制项目，后来证明性能和稳定性都比 C++好。
+之后，更多的工程师开始使用 Rust 在各种项目中，例如 Diem，Hack，Mononoke。
+在 dev tools 中证明 Rust 可行之后, 开始在后端和手机应用中使用 Rust
+很多工程师来自 python 和 javascript 语言，Rust 的强类型和高性能让这些工程师不再挣扎于运行时的 bug。
+为了让 Rust 更广泛的使用，设立了一个专门的 Rust 小组来支持其他的工程师在不同的项目中使用 Rust。 该小组同时在 Rust 社区中也非常活跃，贡献代码。</p>
+<p><a href="https://twitter.com/alexvoica/status/1350049393471324161">原文链接</a></p>
+<h2><a class="header" href="#rust-要上太空了rocketlab-招聘-rust-工程师" id="rust-要上太空了rocketlab-招聘-rust-工程师">Rust 要上太空了！RocketLab 招聘 Rust 工程师</a></h2>
+<p>Rocket Lab 是小型卫星发射领域的全球领导者。团队有 500 人，而且每周都在增加。</p>
+<p>当然，这是在美国的工作。期待国内也会有！</p>
+<p><a href="https://www.rocketlabusa.com/careers/positions/flight-software-engineer-ii-auckland-new-zealand-3653845/">原文链接</a></p>
+<h2><a class="header" href="#rust-书籍宝库" id="rust-书籍宝库">Rust 书籍宝库</a></h2>
+<p>glynnormington 整理了网络上大部分有关 rust 的 mdbook，有官方的，也有非官方的。值得注意的一点是大家关注的 Rust 宏小册很多人以为一直没有更新，但是其实有另一个团队重新在原来的基础上，更新了新的版本，目前已收录到该书库中。</p>
+<p><a href="https://www.reddit.com/r/rust/comments/kwiwb8/the_little_book_of_rust_books/">原文链接</a></p>
+<p><a href="https://lborb.github.io/book/title-page.html">项目地址</a></p>
+<h2><a class="header" href="#时隔一年-tower-终于发布新版本啦" id="时隔一年-tower-终于发布新版本啦">时隔一年 tower 终于发布新版本啦</a></h2>
+<p>Tower 是一个模块化和可重用组件库，用于构建健壮的网络客户端和服务器。上一个版本 0.3.1 版本是 2020 年 1 月 17 发布的，新版本 0.4.0 是 2021 年 1 月 7 号发布的，这个版本包含了大量改动，包括使用了 tokio 1.0，将所有的中间件转移到了 tower crate，改造，添加了中间件 API。</p>
+<p>不过这次变更并没有核心 Service 或者 Layer trait，所以新版本还是依赖着 tower- service 0.3 和 tower- layer 0.3，因此新版本是兼容使用这两个 crate 的库的。更多发布细节请移步下面的链接。</p>
+<p><a href="https://github.com/tower-rs/tower/releases/tag/tower-0.4.0">原文链接</a></p>
+<p><a href="https://crates.io/crates/tower/0.4.0">项目地址</a></p>
+<h2><a class="header" href="#rust-search-extension-110-发布" id="rust-search-extension-110-发布">Rust Search Extension 1.1.0 发布</a></h2>
+<p><a href="https://rust.extension.sh/">Rust Search Extension</a> 发布了最新版，同时也突破了 500 个 star，感谢大家的支持！这个版本主要功能如下：</p>
+<ul>
+<li>! 搜索改成了 docs.rs，!! 改成了 crates.io。</li>
+<li>给 Rust 仓库的 release 页面增加了目录菜单。</li>
+<li>Rust 标准库文档页面和源码页面所有 &quot;since&quot; 和 &quot;issue&quot; 标签分别会链接到仓库的 release 页面对应的版本和 GitHub 对应的 issue 页。</li>
+</ul>
+<h2><a class="header" href="#为什么-2021-年将成为系统程序员的-rust-年" id="为什么-2021-年将成为系统程序员的-rust-年">为什么 2021 年将成为系统程序员的 Rust 年？</a></h2>
+<p>Gartner 今天的一篇博文报道了“Rust”：近年来，Rust 获得了很多粉丝，并且有充分的理由。Rust 旨在成为满足系统编程需求的 C++ 的可靠替代品。</p>
+<p><a href="https://blogs.gartner.com/manjunath-bhat/2021/01/03/why-2021-will-be-a-rusty-year-for-system-programmers/">原文链接</a></p>
 <h1><a class="header" href="#本月简报--推荐项目" id="本月简报--推荐项目">本月简报 | 推荐项目</a></h1>
 <h2><a class="header" href="#微软rust-for-windows" id="微软rust-for-windows">「微软」Rust for Windows</a></h2>
 <ul>
@@ -433,6 +483,9 @@ fn main(){
 <p>相对于在线业务，rlink-rs更关注海量数据的离线流式处理场景，提升吞吐能力、降低资源消耗。其特点是针对exactly once提供计算和输出两种语义；基于特殊的exactly once输出语义，结合rust内存管理模型，实现大部分场景的全内存计算，解决state和checkpoint引起的重量级IO操作。</p>
 <p>rlink-rs的目标是成为一个计算驱动引擎，允许基于DAG定制你自己的计算流程、实现自己的计算语义。</p>
 <p>目前状态：主要针对flink流计算这块做对比。已经实现基本窗口计算流程。</p>
+<p>希望能从社区得到关于流引擎设计方面的帮助：</p>
+<p>1.因为rust语言不如Java动态语言可以反射，在用户api上不那么优雅。
+2.只是想在语义上实现类似flink的api，实现上还是想走一条新的路线，毕竟flink有历史包袱，它的实现我们不需要100%参考。</p>
 <h1><a class="header" href="#本月简报学习资源" id="本月简报学习资源">本月简报：学习资源</a></h1>
 <ul>
 <li>来源：<a href="https://rustcc.cn/section?id=f4703117-7e6b-4caf-aa22-a3ad3db6898f">Rust日报</a></li>
@@ -2994,6 +3047,115 @@ where
 <p>王徐旸，大三学生，2018 年开始学习和使用 Rust 语言，造轮子爱好者。</p>
 <p>GitHub ID: <a href="https://github.com/Nugine">Nugine</a></p>
 <h1><a class="header" href="#rustchinaconf2020-精选--jit-开发实践" id="rustchinaconf2020-精选--jit-开发实践">RustChinaConf2020 精选 | JIT 开发实践</a></h1>
+<p>说明：本文为视频演讲文字版</p>
+<p><strong>主讲人:</strong></p>
+<p><a href="https://github.com/losfair">周鹤洋</a>是<code>wasmer</code>核心开发者，南航2018级本科生，主要掌握编译/OS/VM/微架构等技术，2017年开始使用Rust.</p>
+<h3><a class="header" href="#jit技术含义及应用场合" id="jit技术含义及应用场合">JIT技术含义及应用场合</a></h3>
+<p>​	JIT技术全名为 Just-In-Time compilation，翻译为&quot;即时编译&quot;，是在运行期进行编译的方法，是将源代码或更常见的字节码到机器码的转换，然后直接执行的方法。JIT技术主要应用在各种语言的虚拟机上。在其他场合，比如动态链接器，会在运行之前动态重启程序，对它进行链接; 在linux 内核中, ebpf技术和5.10版本最新引入的static calls机制都使用了类似JIT的机制。</p>
+<p>​	以虚拟机(VM)为例来简单介绍下JIT技术的应用。VM技术，可以大致分为三类，简单的解释器，优化的解释器和即时编译。简单的解释器，类似wasmi，由于对标准的实现非常好，导致没有资源去做优化，没有为运行效率做优化。其次是优化解释器，比如CPython,wasm3,BEAM(erlang 解释器). 而第三种则包括绝大多数高性能运行时虚拟机，JVM，CLR，V8，LuaJIT，Wasmer，Wasmtime.</p>
+<p>​	虚拟机主要应用于当我们需要执行的目标代码格式与机器指令格式不一致时，需要翻译处理的情况。然而当出现我们无法直接静态地翻译到目标机器指令的特性，比如说动态特性( javascript的一些动态约束)，硬件层面难以实现的沙盒特性，比如WebAssembly的内存隔离, 不同的指令集，比如从riscv动态编译到aarch64或者x86-64指令集情况下，我们就需要使用二进制翻译器去进行Jit编译。</p>
+<p>​	jit的优点很明显，可以让程序更效率地运行，可以① 动态优化代码②高效支持语言动态特性和安全要求③ 在一些特殊场合比如static call机制和动态链接器，支持运行环境的初始化操作来避免运行时的大量开销。</p>
+<p>​	<strong>我们现在从动态优化方面来讲述jit相对传统静态编译的关键点。</strong></p>
+<p><img src="chapter_1/../image/Jan_Jit7.PNG" alt="" /></p>
+<center>图1 不同引擎在各JIT优化级别所采用的编译器后端</center>
+<p>​	如图1所示，以JavaScriptCore,V8,Wasmer三个引擎为例，他们均实现了用户可以自由选择后端的操作或者在运行时自动在不同后端间切换的方式，使得可以支持编译优化从低优化级别切换到高优化级别，并且经过未经优化代码的时候，再切换回去的操作。</p>
+<p>​	这里动态优化的流程是我们通过不断(<font color=red>7：00</font>)Profiled,追踪运行状态，去编译优化等级更高的代码，同时编译开销变大，也会做deoptize操作，当优化的代码做一些错误的假设时，我们就需要回滚。</p>
+<p><strong>而用来实现动态切换优化级别的主要技术是OSR技术 ，即栈上替换(on-stack replacement).</strong></p>
+<p><img src="chapter_1/../image/Jan_Jit1.PNG" alt="" /></p>
+<center>图2 切换优化等级:OSR</center>
+<p>​	让我们来看看OSR技术的简易流程。如图2所示，调用栈出现了左边的假想情况时，函数Baz代码优化从解释执行提升到 jit级别1 时， 运行时就会触发函数baz的编译，一旦编译完成，则会发生调用栈的重构，使得 原调用栈中所有函数Baz的记录映射到Jit级别1 的堆栈结构上，使得在原来状态基础之上，以Jit级别1的机器码上继续运行。代价 是 提升了计算的复杂度。</p>
+<p>​	我曾经的一个工作，  在wasmer中实现的OSR技术。 OSR入口动态加载Image,在OSR退出的时候把image提取出来(从调用栈到wasm抽象表示，回到另一种优化等级的wasmer调用栈内的结构。(<font color=red>8:39</font>)</p>
+<p><img src="chapter_1/../image/Jan_Jit2.PNG" alt="" /></p>
+<center>图3 动态切换机制实例随时间变化的性能曲线</center>
+<p>​	图3则是我当时项目benchmark的表现。在图3中，singlepass是我编写的编译最快，运行最慢的后端。llvm是优化等级最高的后端。红线为使用LLVM后端的性能曲线，蓝线为前面2s左右使用singlepass后端，后面使用llvm后端的性能曲线。</p>
+<p>​	如果我们直接用llvm编译的话，我们就需要在程序执行之前，在测试程序中等待2s左右。如果我们引入动态切换机制，在程序启动时可以先使用编译快，但执行满的引擎去做执行，当优化等级高的编译器准备好之后，就动态地切换执行流，得到二者的平衡。红线和蓝线后面没有重合，只是由于我们在蓝线上针对一些做了一些额外操作(<font color=red>9:30</font>),性能理论上还是一样的。</p>
+<p>​	**我要介绍的第二钟动态优化技术 是 内联缓存inline caching。**我了解到有两种典型的用例。</p>
+<ol>
+<li>
+<p>一些动态语言中的method lookup （方法查找）</p>
+<pre><code class="language-javascript">for (let x of list){
+    document.write(x); // method lookup
+}
+</code></pre>
+<p>​	其中write函数是可以被动态重写的，但是这种情况发生的概率非常小，所以说我们在运行时可以假设它不变，去编译生成机器码。当假设不成立的时候，回滚。本来需要从哈希表中查找该方法，对缓存不友好，运行速度慢。</p>
+<p>​	所以我们可以直接对该指令映射为一个缓存槽(slot)，把write函数对应的某些标记和write函数地址写入，检查运行条件是否符合，符合就可以直接执行，避免哈希表查找的开销，否则进行回滚。</p>
+</li>
+<li>
+<p>RISC-V二进制翻译</p>
+<p><img src="chapter_1/../image/Jan_Jit8.PNG" alt="" /></p>
+<center>图4  RISC-V 二进制翻译代码示例 </center>
+<p>​	在RISC-V当中，主要有访存指令和跳转指令会涉及到较大的内存结构查找开销。</p>
+<p>​	① 对于全系统模拟的访存指令(load/store)，需要在内存管理单元钟进行tlb lookup，用软件实现非常慢，遍历4层页表。或者在一些高层次结构的模拟时，在b-tree结构去查找内存空间，效率也很低。</p>
+<p>​	对于这种指令，我们可以对指令关联一个缓存槽，当该指令第一次需求查表的时候，将查表预期的虚拟地址范围和真实物理地址  写入到缓存槽中，以后每次执行到该指令时，我们就直接用缓存信息直接提取内存信息即可。</p>
+<p>​	② 如图4，jalr指令，间接跳转指令的例子。对于这种指令，除了需要mmu lookup , 还需要查找Jit 翻译，即被翻译后的字节码(translation lookup)，共两层查找。 而内联缓存技术就可以消除这两层查找的开销。</p>
+</li>
+</ol>
+<p>让我来介绍一下关于内联缓存我所做的简单应用吧。 rvjt-aa64项目 是我所完成的riscv到aarch64的jit引擎(<a href="https://github.com/losfair/rvjit-aa64">rvjit-aa64</a>)</p>
+<p><img src="chapter_1/../image/Jan_Jit3.PNG" alt="" /></p>
+<center>图5 rvjit-aa64 快速路径(从内存加载数据)</center>
+<p>​	图5展示了访存指令的快速路径，可以看见我们分配了关于上界和下界的两个缓存槽。检查目标虚拟地址是否位于预期界限当中，如果在范围内，就直接加载，不用回滚到解释执行了。否则就走慢速路径，执行查表处理。</p>
+<p><img src="chapter_1/../image/Jan_Jit4.PNG" alt="" /></p>
+<center>图6 rvjit-aa64慢速路径(从内存加载数据)</center>
+<p>​	图6展示了访存指令的慢速路径。当发生<code>load/store miss</code>时，我们就会针对地址addr进行查表， 检查读写权限和相关信息，如果可以的话就将其写入缓存槽内，下次就可以快速执行。</p>
+<p>​	<strong>接下来我来介绍有关内存安全方面的内容。</strong></p>
+<p>​	我们知道rust作为一个以安全性著称的语言，保证safe代码内存安全。(<font color=red>13:40</font>)所以我们就需要在运行时通过动态的机制确保内存安全。</p>
+<p>​	我以空指针检查和访问越界检查为例来介绍Jit如何确保内存安全。</p>
+<p>​	①空指针检查:</p>
+<p>​	比如在java,c#这类有空指针的语言中，我们会遇到一个很常见的情况。当引用为空的时候，我们不应该对它解引用并且成功。我们应该检查它是否为空，如果为空，应该产生异常而非解引用。一个显而易见的方法是<code>if (a == null){ throw Exception(...)}</code>，但这样开销很大。如同下面代码所展示的，在<code>mov</code>指令前需要插入<code>cmp</code>和<code>je</code>指令，就会增加额外的分支预测的开销。</p>
+<pre><code class="language-assembly">1: 1 cmp $0, %rdi
+2: je null_pointer_exception 
+3: mov %rdi,16(rsp)
+...
+
+null_pointer_exception:
+	call host_npe_handler
+	...
+</code></pre>
+<p>​	所以我们可以尝试一些别的方法。利用硬件trap机制，访问空指针时，从第三行mov指令直接trap到sigsegv异常(以Linux为例)，从而让硬件去检查我们的指针有效性。</p>
+<p>​	②访问越界检查</p>
+<p>​	对于webassembly中线性内存访问 的处理也可以使用trap机制,比如wasmer和wasmtime的处理方法是，直接分配6GB的虚拟地址空间，只对其中有webassembly分配的区域去做映射。一旦访问到存在映射区域以外的区域时,就会抛出异常,被sigsegv处理器捕获。这样是以慢速路径中的时间增加为代价去换取快速路径上的开销,因为慢速路径钟加入了sigsegv异常处理机制，而快速路径则不再需要界限判断。</p>
+<p>​	当然具体的细节会复杂一些，比如wasmer中一段代码,采用Unix信号处理同步异常.调用low level的system api去绑定,关联这些异常信号到处理器上,处理器会分发,然后进一步找出路径.</p>
+<p>​	<strong>最后我们来介绍一下linux kernel中运用到jit方法的一些技术。</strong></p>
+<p>​	①比如ebpf,是一种允许用户代码安全接入内核的机制. 他有interpreter和jit两种实现方式.大多数主流架构都是用Jit实现.</p>
+<p><img src="chapter_1/../image/Jan_Jit5.PNG" alt="" /></p>
+<center>图7  Retpoline, Static call机制处理间接跳转的简要代码</center>
+<p>​		②linux 5.10引入的static call机制。 在此之前，为了缓解 spectre 系列漏洞,特别是spectre v2 漏洞,我们会采用retpoline技术.</p>
+<p>依赖于RSB(Return Stack Buffer), 它的目的是所有间接调用不经过分支目标缓存(Branch Target Buffer),这样保证攻击无法生效. </p>
+<p>​	为方便大家理解Retpoline原理，我这里参考了<a href="https://terenceli.github.io/%E6%8A%80%E6%9C%AF/2018/03/24/retpoline">retpoline: 原理与部署</a>一文来作原理的解释。如图7所示，jmp指令通过rax值进行间接跳转，在original方式下，CPU会询问indirect branch preditor。如果有攻击者之前训练过该分支，就会导致CPU跳转执行特定代码。而retpoline机制阻止CPU的投机执行。在Retpoline方式下，</p>
+<p>​	①执行<code>call L2</code>后，会将<code>lfence</code>地址压栈，并填充到Return Stack Buffer(RSB)，然后跳转到L2位置。</p>
+<p>​	②<code>mov %rax, (%rsp)</code>指令将间接跳转地址(<code>*%rax</code>)放到栈顶，此时栈顶地址和RSB中地址不同。</p>
+<p>​	③此时对于<code>ret</code>指令如果CPU投机执行时，会使用第一步中放入RSB中的地址，而<code>lfence</code>，<code>jmp L1</code>指令会导致一个死循环。</p>
+<p>​	④CPU发现内存栈上的返回地址和RSB投机地址不同，所以投机执行终止，跳转到<code>*%rax</code></p>
+<p>​	这样Retpoline机制就避免了CPU的投机执行。	</p>
+<p>​	但是在 linux内核中我们发现,有很多pattern的间接调用目标是一定的,比如虚表(<font color=red>17:40</font>) 所以我们会把它装化成两次直接调用,第二次直接调用代码使用jit重写,如图7  <code>_trampoline</code>所示, 这样我们消除了spectre v2的可能性, 而且也减少了间接调用的开销(因为使用了直接调用)</p>
+<h3><a class="header" href="#在我的项目中是否应该使用jit" id="在我的项目中是否应该使用jit">在我的项目中是否应该使用jit?</a></h3>
+<p><img src="chapter_1/../image/Jan_Jit6.PNG" alt="" /></p>
+<center>图8 wasm引擎执行效率与工程复杂度的表现</center>
+<p>​	如图8所示，wasm3虽然是一个解释器，但是相较于Wasmer,LLVM(最好的wasmer jit实现)性能低了10倍，对于解释器来说，是一个非常好的性能表现。并且wasm3的工程复杂度也低了许多。</p>
+<p>​	考虑到 执行效率与工程复杂性的关系, 工程复杂性低,意味着出现的Bug数量少, 项目代码也就更安全.。所以对于安全要求高的话,就需要 谨慎考虑jit.	</p>
+<p>​	在今年linux内核中 ebpf jit发现了两个LPE bug(CVE-2020-8835, CVE-2020-27194), 即使在使用开发人员众多的linux内核中，较小的语言ebpf((<font color=red>19:15</font>))当中仍出现了比较严重的bug, 这说明Jit编译器工程复杂度很高,需要团队巨大的资源支持维护.</p>
+<h3><a class="header" href="#用rust实现jit的体验" id="用rust实现jit的体验">用rust实现jit的体验</a></h3>
+<p>​	使用过程宏 处理汇编很方便(<font color=red>19:42</font>), 编写一些Low  level的jit体验非常好. rust语言作为源语言去实现目标语言的编译,无法保证其语言之外的安全性,这可以说是一种局限性吧.rust语言相对于c和c++还是比较有优势的.</p>
+<h2><a class="header" href="#提问环节" id="提问环节">提问环节</a></h2>
+<p>问题1: (<font color=red>20:40</font>)  (猜测: 图3使用的Benchenmark使用了hashmap吗？)</p>
+<p>回答: 我使用的Benchmark用hashmap会慢50%左右, 因为hashmap对缓存不友好。</p>
+<p>问题2: 在jit空指针检查中，将普通的软件判断替换成trap，变成硬件中断，会提升效率吗？</p>
+<p>回答:  trap可以类比为rust当中panic,比如数组越界等,在绝大多数情况下都会执行快速路径,当程序出现bug才会执行trap路径.</p>
+<p>问题3: 有关内存越界的问题，如果a内存和b内存相邻，a内存已经被映射了，此时越界访问到b内存，这个检查是否失效？</p>
+<p>回答: 因为我们在内联缓存中，存储了上界与下界的缓存。我们会对访问的内存比较上界和下界，如果越界就排除在外了。对于这里的比较开销，我们经过一层的比较((<font color=red>22:29</font>))，对缓存是友好的，并且相较于查表，开销很大。</p>
+<p>问题4: wasmer如何兼容x86和arm指令集?</p>
+<p>回答:  我们使用的编译器后端<a href="https://crates.io/crates/wasmer-compiler-singlepass">singlepass</a>和llvm后端都是支持arm指令的.</p>
+<p><strong>补充</strong>:  通过硬件来提高jit的性能</p>
+<p>wasmer 在运行时会做一些检查,比如跳转时要查询某个表,然后在表中找到目标地址,然后跳转.这样我们就需要在代码中做分支处理. 如果在risc-v Physical Memory Protection (PMP)的扩展下,就可以在一些情况避免上面查表的开销. 而苹果m1 中兼容x86的机制,通过硬件上添加一个x86 的<a href="https://www.cs.utexas.edu/%7Ebornholt/post/memory-models.html">total store ordering</a> (TSO)开关去使用x86内存顺序,提升模拟效率. 同时我们可以看到，arm指令集这几个版本也引入了支持javascript-operations 的一些指令，可以使得我们常用的一些jit目标语言提高执行效率。</p>
+<p>参考文章:</p>
+<ol>
+<li><a href="https://github.com/terenceli">Terenceli</a>  <a href="https://terenceli.github.io/%E6%8A%80%E6%9C%AF/2018/03/24/retpoline">retpoline: 原理与部署</a></li>
+<li><a href="https://www.infoq.com/profile/Sergio-De-Simone/">Sergio De Simone</a>  <a href="https://www.infoq.com/news/2020/11/rosetta-2-translation/">How x86 to arm64 Translation Works in Rosetta 2</a></li>
+</ol>
+<p>​	</p>
+<hr />
+<p>编者简介:</p>
+<p>大海，编程爱好者，对技术充满热情。</p>
 <h1><a class="header" href="#rustchinaconf2020-精选--rust-异步与并发" id="rustchinaconf2020-精选--rust-异步与并发">RustChinaConf2020 精选 | Rust 异步与并发</a></h1>
 <h1><a class="header" href="#rustc专题--rust-dev-guide-中文翻译启动" id="rustc专题--rust-dev-guide-中文翻译启动">Rustc专题 | Rust Dev Guide 中文翻译启动</a></h1>
 <h1><a class="header" href="#rustc专题--rust语言项目结构概览" id="rustc专题--rust语言项目结构概览">Rustc专题 | Rust语言项目结构概览</a></h1>
